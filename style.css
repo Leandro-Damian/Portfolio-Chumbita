@@ -268,7 +268,58 @@ section {
       width: calc(100% + 8);
     }
 }
-/*EXPERIENCE*/
+
+/*Projects*/
+
+#projects {
+  background: var(--second-bg-color);
+}
+.container-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.projects-box {
+  max-width: 800px;
+  background: var(--bg-color);
+  border-radius: 1rem;
+  margin: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(44, 44, 44, 0.3);
+}
+
+.subtitle-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: var(--main-color);
+  font-style: italic;
+}
+
+.projects-info a {
+  display: block;
+}
+
+.projects-info img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 3rem;
+  padding: 20px;
+  padding-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+.projects-info img:hover {
+  transform: scale(1.05);
+}
+
+/*EXPERIENCE - EDUCATION*/
 .heading {
     font-size: 8rem;
     text-align: center;
@@ -276,7 +327,7 @@ section {
 }
 .exp-education {
     padding: 100px 15px;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .exp-education h2 {
@@ -384,51 +435,6 @@ section {
 ::-webkit-scrollbar-track {
     background-color: var(--bg-color);
     width: 50px;
-}
-/*Projects*/
-.container-projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 1rem;
-    justify-items: center;
-    align-items: center;
-}
-
-.projects-box {
-    max-width: 800px;
-    background: var(--second-bg-color);
-    border-radius: 1rem;
-    margin: 1rem;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(44, 44, 44, 0.3);
-}
-
-.subtitle-projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    color: var(--main-color);
-    font-style: italic;
-}
-
-.projects-info a {
-    display: block;
-}
-
-.projects-info img {
-    width: 400px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 3rem;
-    padding: 20px;
-    padding-bottom: 5px;
-    transition: transform 0.3s ease;
-}
-
-.projects-info img:hover {
-    transform: scale(1.05);
 }
 
 /*SKILLS*/

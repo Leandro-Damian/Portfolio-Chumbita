@@ -6,11 +6,7 @@ const email = document.getElementById('email');
 const mensaje = document.getElementById('mensaje');
 const botonContacto = document.getElementById('botonContacto');
 const formulario = document.getElementById('formulario');
-const SERVICE_ID = 'service_jnx0x2o';
-const TEMPLATE_ID = 'template_6d46tsg';
-const USER_ID = 'EkWZaY8-3-rh1EJaY';
 
-emailjs.init(USER_ID);
 
 /*abre y cierra el icono del menu*/
 menuIcon.addEventListener('click', () => {
@@ -29,11 +25,3 @@ for (let i = 0; i < menuOptions.length; i++) {
         a.classList.add('active');
     })
 }
-
-/**
- * function toggleMenu() {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('show');
-}
- * 
- */
