@@ -5,7 +5,6 @@ const nombreCompleto = document.getElementById('nombreCompleto');
 const email = document.getElementById('email');
 const mensaje = document.getElementById('mensaje');
 
-
 /*abre y cierra el icono del menu*/
 menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
