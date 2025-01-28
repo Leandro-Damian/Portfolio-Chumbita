@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="description" content="Portfolio profesional de Leandro Damian Chumbita. Descubre mis proyectos, habilidades y experiencia en desarrollo web y programación.">
     <meta name="author" content="Leandro Damian Chumbita">
-    <meta name="keywords" content="Leandro Damian Chumbita, portfolio, desarrollador web, programación, proyectos, HTML, CSS, JavaScript, React, servicio tecnico, reparacion de hardware">
+    <meta name="keywords" content="Leandro Damian Chumbita, portfolio, desarrollador web, programación, proyectos, HTML, CSS, JavaScript, React, servicio tecnico, reparación de hardware">
     <meta property="og:title" content="Portfolio de Leandro Damian Chumbita">
     <meta property="og:description" content="Explora mis proyectos y habilidades en desarrollo web.">
+    <link rel="icon" href="/assets/code.png" type="image/png">
     <title>Leandro Chumbita</title>
 </head>
 <body>
@@ -289,7 +290,7 @@
             <form action="https://formsubmit.co/chumbitadev@gmail.com" method="POST" id="form">
                 <div class="input-group">
                     <div class="input-box">
-                        <input id="nombreCompleto" type="text" name="nombreCompleto" placeholder="Nombre Completo" required="">
+                        <input id="nombreCompleto" type="text" name="text" placeholder="Nombre Completo" required="">
                         <input id="email" type="email" name="email" placeholder="Email" required="">
                     </div>
                 </div>
@@ -297,6 +298,8 @@
                     <textarea id="mensaje" name="textarea" cols="30" rows="10" placeholder="Mensaje"></textarea>
                     <input id="botonContacto" name="submit" class="btn" type="submit" value="Enviar Mensaje">
                 </div>
+                <input type="hidden" name="_next" value="https://chumbitadev.netlify.app">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </section>
         <!--FOOTER-->

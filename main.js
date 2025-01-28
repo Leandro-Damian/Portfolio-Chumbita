@@ -4,8 +4,6 @@ const menuOptions = document.querySelectorAll("#navbar > a");
 const nombreCompleto = document.getElementById('nombreCompleto');
 const email = document.getElementById('email');
 const mensaje = document.getElementById('mensaje');
-const botonContacto = document.getElementById('botonContacto');
-const formulario = document.getElementById('formulario');
 
 
 /*abre y cierra el icono del menu*/
