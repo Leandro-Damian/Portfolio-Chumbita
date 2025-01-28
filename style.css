@@ -705,3 +705,63 @@ section {
     width: 90%;
   }
 }
+
+/* Estilo del alert personalizado */
+.alert {
+  position: fixed;
+  max-width: 350px;
+  width: 100%;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #5baccc;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1000;
+}
+
+/* Caja contenedora */
+.alert-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Texto del boton*/
+.text-btn {
+  font-size: 20px;
+}
+
+/* Boton de cierre */
+.close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hover del boton */
+.close-btn:hover {
+  color: #ddd;
+}
+
+/* Estilo del backdrop */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; /* Oculto por defecto */
+  z-index: 4; /* Debe estar por encima del contenido */
+}
+
+/* Mostrar el backdrop cuando el menú esté activo */
+.navbar.active + .backdrop {
+  display: block;
+}

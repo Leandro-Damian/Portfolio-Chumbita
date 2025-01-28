@@ -4,6 +4,7 @@ const menuOptions = document.querySelectorAll("#navbar > a");
 const nombreCompleto = document.getElementById('nombreCompleto');
 const email = document.getElementById('email');
 const mensaje = document.getElementById('mensaje');
+const backdrop = document.getElementById("backdrop");
 
 /*abre y cierra el icono del menu*/
 menuIcon.addEventListener('click', () => {
@@ -22,3 +23,36 @@ for (let i = 0; i < menuOptions.length; i++) {
         a.classList.add('active');
     })
 }
+
+// Cerrar el menú si se hace clic fuera (en el backdrop)
+backdrop.addEventListener("click", () => {
+    navbar.classList.remove("active");
+    backdrop.classList.remove("active");
+  });
+  
+  const form = document.getElementById("form");
+  const customAlert = document.getElementById("customAlert");
+  
+  form.addEventListener("submit", function () {
+    // Limpiar los campos del formulario
+    document.getElementById("nombreCompleto").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("asunto").value = "";
+    document.getElementById("mensaje").value = "";
+  
+    // Mostrar el alert personalizado
+    customAlert.style.display = "block";
+  
+    // Cerrar el alert después de 5 segundos
+    setTimeout(function () {
+      closeAlert();
+  
+      // Enviar el formulario manualmente después de mostrar el alert
+      form.submit();
+    }, 5000); // 5 segundos
+  });
+  
+  // Función para cerrar el alert
+  function closeAlert() {
+    customAlert.style.display = "none";
+  }
