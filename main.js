@@ -1,9 +1,6 @@
 const menuIcon = document.getElementById('menu-icon');
 const navbar = document.getElementById('navbar');
 const menuOptions = document.querySelectorAll("#navbar > a");
-const nombreCompleto = document.getElementById('nombreCompleto');
-const email = document.getElementById('email');
-const mensaje = document.getElementById('mensaje');
 const backdrop = document.getElementById("backdrop");
 
 /*abre y cierra el icono del menu*/
@@ -33,17 +30,12 @@ backdrop.addEventListener("click", () => {
   const form = document.getElementById("form");
   const customAlert = document.getElementById("customAlert");
   
-  form.addEventListener("submit", function () {
-    document.getElementById("nombreCompleto").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("asunto").value = "";
-    document.getElementById("mensaje").value = "";
-  
+  form.addEventListener("submit", function () {  
     customAlert.style.display = "block";
     setTimeout(function () {
       closeAlert();
       form.submit();
-    }, 5000); 
+    }, 5000);
   });
   
   // Función para cerrar el alert
