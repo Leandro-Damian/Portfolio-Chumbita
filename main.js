@@ -34,22 +34,16 @@ backdrop.addEventListener("click", () => {
   const customAlert = document.getElementById("customAlert");
   
   form.addEventListener("submit", function () {
-    // Limpiar los campos del formulario
     document.getElementById("nombreCompleto").value = "";
     document.getElementById("email").value = "";
     document.getElementById("asunto").value = "";
     document.getElementById("mensaje").value = "";
   
-    // Mostrar el alert personalizado
     customAlert.style.display = "block";
-  
-    // Cerrar el alert después de 5 segundos
     setTimeout(function () {
       closeAlert();
-  
-      // Enviar el formulario manualmente después de mostrar el alert
       form.submit();
-    }, 5000); // 5 segundos
+    }, 5000); 
   });
   
   // Función para cerrar el alert
