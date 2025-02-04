@@ -29,7 +29,6 @@ body {
     color: var(--text-color);
 }
 
-
 /*NAVBAR*/
 .header {
     position: fixed;
@@ -272,32 +271,63 @@ section {
 /*Projects*/
 #projects {
   background: var(--second-bg-color);
+  /*1 líneas de camio*/
+  padding: 6rem 12%;
 }
 .container-projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 1rem;
+  /*se modificará el grid-template-columns*/
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /*se quita la siguiente linea: grid-template-rows: repeat(2, auto);*/
+  /*en ves de 1rem de gap, se coloca 2*/
+  gap: 2rem;
   justify-items: center;
   align-items: center;
 }
 
 .projects-box {
-  max-width: 800px;
+  /*se le cambia el max-width 800px a 100%*/
+  max-width: 100%;
   background: var(--bg-color);
   border-radius: 1rem;
   margin: 1rem;
   overflow: hidden;
-  box-shadow: 0 0 15px rgba(44, 44, 44, 0.3);
+  /*se modifica un poco el box-shadow 0 0 15px rgba(44, 44, 44, 0.3)*/
+  box-shadow: 0 8px 15px rgba(44, 44, 44, 0.5);
+  /*se agrega la siguiente linea*/
+  transition: all 0.3s ease-in-out; /* Transición para el hover */
 }
 
+/*se agrega el siguiente bloque*/
+.projects-box:hover {
+  transform: translateY(-10px); /* Efecto de elevación */
+  box-shadow: 0 15px 30px rgba(44, 44, 44, 0.3); /* Sombras más intensas al hacer hover */
+}
+
+/*se agrega los siguiente 2 bloques */
+/* Project Image */
+.projects-info img {
+  width: 100%; /* Hacer que las imágenes cubran todo el ancho de la tarjeta */
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Efecto suave de zoom */
+}
+
+.projects-info img:hover {
+  transform: scale(1.1); /* Efecto de zoom en la imagen */
+}
+/*hasta aqui*/
+
+/*se modifica el margin de 0 a 1 rem; y font-size: 1.5rem;*/
 .subtitle-projects {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 1rem;
   color: var(--main-color);
   font-style: italic;
+  font-size: 1.5rem;
 }
 
 .projects-info a {
@@ -764,4 +794,15 @@ section {
 /* Mostrar el backdrop cuando el menú esté activo */
 .navbar.active + .backdrop {
   display: block;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
