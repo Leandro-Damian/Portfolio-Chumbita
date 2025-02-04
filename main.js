@@ -42,17 +42,3 @@ backdrop.addEventListener("click", () => {
   function closeAlert() {
     customAlert.style.display = "none";
   }
-// De aqui para abajo son cambios de prueba
-document.addEventListener("DOMContentLoaded", function () {
-  const hiddenElements = document.querySelectorAll('.hidden');
-
-  const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-          }
-      });
-  }, { threshold: 0.2 });
-
-  hiddenElements.forEach(el => observer.observe(el));
-});
