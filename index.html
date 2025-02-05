@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="description" content="Portafolio de Leandro Damian Chumbita. Desarrollo web y servicio técnico de PC. Explora mis proyectos y servicios profesionales.">
+    <meta name="description" content="Portfolio de Leandro Damian Chumbita: desarrollo web, reparación de PC y notebooks. Servicios de soporte técnico, mantenimiento y creación de sitios web profesionales.">
+    <meta name="keywords" content="desarrollo web, soporte técnico, reparación de computadoras, reparación de notebooks, mantenimiento de PC, creación de sitios web, portfolio de desarrollador, html 5, css, JavaScript, React, Tailwind, Git, GitHub, Postgresql, CETIA, Teclab, Fundación Museo ICATEC">
     <meta name="author" content="Leandro Damian Chumbita">
-    <meta name="keywords" content="desarrollo web, servicio técnico PC, programación, hardware, software, reparación computadoras, React, JavaScript">
-    <meta property="og:title" content="Portafolio de Leandro Damian Chumbita - Desarrollo Web y Servicio Técnico PC">
-    <meta property="og:description" content="Soy Leandro Damian Chumbita, programador web y técnico en PC. Explora mis proyectos y servicios.">
-    <meta property="og:url" content="https://https://chumbitadev.netlify.app/">
+    <meta property="og:title" content="Leandro Damian Chumbita | Desarrollo Web y Soporte Técnico">
+    <meta property="og:description" content="Desarrollador web y técnico en reparación de computadoras y notebooks. Conoce mis proyectos y servicios profesionales.">
+    <meta property="og:image" content="URL-de-tu-imagen-destacada">
+    <meta property="og:url" content="https://tu-portfolio.netlify.app">
     <meta property="og:type" content="website">
     <link rel="icon" href="/assets/code.png" type="image/png">
     <title>Leandro Chumbita</title>
@@ -35,7 +37,7 @@
     <div id="backdrop" class="backdrop"></div>
     <!--INICIO-->
     <section id="home" class="home">
-        <div class="home-content">
+        <div class="home-content" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
               <h1>
                   ¡Hola, Soy
                   <span> Leandro Chumbita!</span> 
@@ -69,7 +71,7 @@
               </div>
         </div>
 
-        <div class="home-img">
+        <div class="home-img" data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
            <img src="/assets/cv2.jpeg" alt="foto de leandro chumbita">
         </div>
     </section>
@@ -77,61 +79,61 @@
     <section id="projects" class="projects">
         <h2 class="heading">Proyectos</h2>
         <div class="container-projects">
-          <div class="projects-box">
-            <div class="projects-info">
-              <a href="https://iridescent-melba-565061.netlify.app/" target="_blank">
-                <img src="/assets/SCEO-Agency.png" alt="imagen de la agencia de SCEO" class="img-info">
-              </a>
-              <h3 class="subtitle-projects">SCEO Agency</h3>
+            <div class="projects-box" data-aos="zoom-in">
+              <div class="projects-info">
+                <a href="https://iridescent-melba-565061.netlify.app/" target="_blank">
+                  <img src="/assets/SCEO-Agency.png" alt="imagen de la agencia de SCEO" class="img-info">
+                </a>
+                <h3 class="subtitle-projects">SCEO Agency</h3>
+              </div>
             </div>
-          </div>
-          <div class="projects-box">
-            <div class="projects-info">
-              <a href="https://lighthearted-cocada-a821df.netlify.app/" target="_blank">
-                <img src="/assets/carta de presentación.png" alt="paleta de colores" class="img-info">
-              </a>
-              <h3 class="subtitle-projects">Paleta de colores</h3>
+            <div class="projects-box" data-aos="zoom-in">
+              <div class="projects-info">
+                <a href="https://lighthearted-cocada-a821df.netlify.app/" target="_blank">
+                  <img src="/assets/landing-page.png" alt="landing page" class="img-info">
+                </a>
+                <h3 class="subtitle-projects">Landing Page</h3>
+              </div>
             </div>
-          </div>
-          <div class="projects-box">
-            <div class="projects-info">
-              <a href="https://vermillion-lokum-ee4d9f.netlify.app/" target="_blank">
-                <img src="/assets/gato-de-schrodinger.webp" alt="El gato de Schrödinger" class="img-info">
-              </a>
-              <h3 class="subtitle-projects">El gato de Schrödinger</h3>
+            <div class="projects-box" data-aos="zoom-in">
+              <div class="projects-info">
+                <a href="https://splendorous-concha-087826.netlify.app/" target="_blank">
+                  <img src="/assets/el-gato-de-schrodinger-1.jpg" alt="El gato de Schrödinger" class="img-info">
+                </a>
+                <h3 class="subtitle-projects">El gato de Schrödinger</h3>
+              </div>
             </div>
-          </div>
-          <div class="projects-box">
-            <div class="projects-info">
-              <a href="https://starlit-longma-22a160.netlify.app/" target="_blank">
-                <img src="/assets/WebSitePersonal.png" alt="sitio web personal" class="img-info">
-              </a>
-              <h3 class="subtitle-projects">Sitio web personal</h3>
+            <div class="projects-box" data-aos="zoom-in">
+              <div class="projects-info">
+                <a href="https://gleaming-naiad-52d99b.netlify.app/" target="_blank">
+                  <img src="/assets/pokemon.png" alt="Pokemón" class="img-info">
+                </a>
+                <h3 class="subtitle-projects">Pokemón</h3>
+              </div>
             </div>
-          </div>
-          <div class="projects-box">
-            <div class="projects-info">
-              <a href="https://gleaming-naiad-52d99b.netlify.app/" target="_blank">
-                <img src="/assets/pokemon.png" alt="pokemon" class="img-info">
-              </a>
-              <h3 class="subtitle-projects">Pokemón</h3>
+            <div class="projects-box" data-aos="zoom-in">
+              <div class="projects-info">
+                <a href="https://starlit-longma-22a160.netlify.app/" target="_blank">
+                  <img src="/assets/WebSitePersonal.png" alt="sitio web personal" class="img-info">
+                </a>
+                <h3 class="subtitle-projects">Sitio web personal</h3>
+              </div>
             </div>
-          </div>
-          <div class="projects-box">
-            <div class="projects-info">
-              <a href="https://rococo-otter-4a649c.netlify.app/" target="_blank">
-                <img src="/assets/animacion-cosmica.png" alt="animacion cosmica" class="img-info">
-              </a>
-              <h3 class="subtitle-projects">Animación cósmica</h3>
+            <div class="projects-box" data-aos="zoom-in">
+              <div class="projects-info">
+                <a href="https://rococo-otter-4a649c.netlify.app/" target="_blank">
+                  <img src="/assets/animacion-cosmica.png" alt="animacion cosmica" class="img-info">
+                </a>
+                <h3 class="subtitle-projects">Animación cósmica</h3>
+              </div>
             </div>
-          </div>
         </div>
 		  </section>
       <!--Experience | Education-->
       <section id="exp-education" class="exp-education">
           <h2 class="heading">Experiencia | Educación</h2>
           <div class="timeline-items">
-              <div class="timeline-item">
+              <div class="timeline-item" data-aos="fade-right">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Feb. 2023 - Actualidad</div>
                 <div class="timeline-content">
@@ -142,7 +144,7 @@
                   </p>                      
                 </div>
               </div>
-              <div class="timeline-item">
+              <div class="timeline-item" data-aos="fade-left">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Agos. 2023 - Actualidad</div>
                 <div class="timeline-content experience">
@@ -153,7 +155,7 @@
                   </p>
                   </div>
               </div>
-              <div class="timeline-item">
+              <div class="timeline-item" data-aos="fade-right">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Oct. 2023 - Nov. 2024</div>
                 <div class="timeline-content experience">
@@ -164,7 +166,7 @@
                   </p>
                 </div>
               </div>
-              <div class="timeline-item">
+              <div class="timeline-item" data-aos="fade-left">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Dic. 2022 - Finalizado</div>
                 <div class="timeline-content">
@@ -175,7 +177,7 @@
                   </p>
                 </div>
               </div>
-              <div class="timeline-item">
+              <div class="timeline-item" data-aos="fade-right">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Ene. 2023 - Oct. 2023</div>
                 <div class="timeline-content">
@@ -191,7 +193,7 @@
         <!--HABILIDADES-->
         <section id="skills" class="skills">
             <h2 class="heading">Habilidades</h2>
-            <div class="skills-container">
+            <div class="skills-container" data-aos="fade-down">
               <div class="skill"> <!--html-->
                 <svg
                   class="language"
@@ -300,10 +302,8 @@
                   />
                   </svg>
               </div>
-            </div>
-            <!--primer bloque-->
-            <div class="skills-container">
-              <!--segundo bloque-->
+            </div><!--primer bloque-->
+            <div class="skills-container" data-aos="fade-down"><!--segundo bloque-->
               <div class="skill">
                 <!--git-->
                 <svg
@@ -446,7 +446,7 @@
           <form 
           action="https://formsubmit.co/5115cb50c966f9fcd1fcf1a7e4dcdb07"
           method="POST"
-          id="form">
+          id="form" data-aos="fade-down">
             <div class="input-group">
               <div class="input-box">
                 <input id="nombreCompleto" type="text" name="nombre" placeholder="Nombre" required>
@@ -471,9 +471,13 @@
         <!--FOOTER-->
         <footer class="footer">
           <p class="copyright">
-              Leandro Damian Chumbita | <em>Realizado con HTML, CSS & JavaScript</em>
+              Leandro Damian Chumbita - <strong>Técnico superior en programación</strong> | <em>Realizado con HTML, CSS & JavaScript</em>
           </p>
         </footer>
         <script src="main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 </html>
